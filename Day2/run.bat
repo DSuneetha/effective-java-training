@@ -1,1 +1,0 @@
-java -cp .;./lib/furnitures/Bedroom;./lib/furnitures/livingroom;./lib/data FurnitureApp

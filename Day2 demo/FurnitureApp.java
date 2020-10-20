@@ -1,18 +1,24 @@
+import data.*;
+import furnitures.bedroom.*;
+import furnitures.livingroom.*;
+import furnitures.office.*;
+import data.Table;
+
 
 class FurnitureApp{
 
     public static void main(String []args){
 
-        furnitures.livingroom.Chair livingRoomChair=new furnitures.livingroom.Chair();  //Living room chair
-        furnitures.livingroom.Table livingRoomTable=new furnitures.livingroom.Table(); //living room table
-       furnitures.bedroom.Bed bed=new furnitures.bedroom.Bed();       //Bedroom Bed
+        Chair livingRoomChair=new Chair();  //Living room chair
+        Table livingRoomTable=new Table(); //living room table
+        Bed bed=new Bed();       //Bedroom Bed
 
        
-       furnitures.office.Table officeTable=new furnitures.office.Table();
-       furnitures.office.Chair officeChair=new furnitures.office.Chair();
+       Table officeTable=new Table();
+       Chair officeChair=new Chair();
 
-        data.List list=new data.List();
-        data.Table Table=new data.Table();
+        List list=new List();
+       Table Table=new Table();
         System.out.printf("The price of %s is %d\n",bed, bed.price());
 
         System.out.printf("The price of %s is %d\n",livingRoomChair, livingRoomChair.price());

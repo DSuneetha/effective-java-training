@@ -1,0 +1,1 @@
+javac -cp .;./in.pendyala.suneetha;./com.javapeople FurnitureApp.java
