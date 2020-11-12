@@ -15,7 +15,7 @@ public interface BookInterface {
 
 	void removeBook(String isbn);
 
-	Book getBooksByAuthor(String authorName);
+	List<Book> getBooksByAuthor(String authorName);
 
 	List<Book> getBooksInPriceRange(int min, int max);
 

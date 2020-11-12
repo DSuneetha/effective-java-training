@@ -36,7 +36,7 @@ public class BookService implements BookInterface {
 	}
 
 	@Override
-	public Book getBooksByAuthor(String authorName) {
+	public List<Book> getBooksByAuthor(String authorName) {
 		return books.findByAuthorContainingIgnoreCase(authorName);
 	}
 

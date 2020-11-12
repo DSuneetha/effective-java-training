@@ -12,7 +12,7 @@ public interface BookRepository extends JpaRepository<Book, String> {
 
 	@Query(value = "select * from book b where "
 			+ "exists(select 1 from author a where a.id=b.author_id and a.name =:authorNamePart)", nativeQuery = true)
-	Book findByAuthorContainingIgnoreCase(String authorNamePart);
+	List<Book> findByAuthorContainingIgnoreCase(String authorNamePart);
 
 	@Query(value = "SELECT r.review from review r where r.book_id=:isbn", nativeQuery = true)
 	List<Object> reviewbyIsbn(String isbn);
