@@ -16,3 +16,6 @@ private/
 *.class 
 .metadata/ 
 .recommenders/
+*.class 
+.metadata/ 
+.recommenders/
